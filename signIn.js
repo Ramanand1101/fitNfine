@@ -18,6 +18,7 @@ signIn.addEventListener("submit",function(event){
         else{
             alert("logIn successful!")
             window.location.assign("./dashboard.html")
+            //move to dashboard
         }
     }
 })
