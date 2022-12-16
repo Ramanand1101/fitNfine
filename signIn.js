@@ -21,6 +21,7 @@ signIn.addEventListener("submit",function(event){
         }
     }
 })
+//add logo function here 
 let logo=document.querySelector("#logo")
 logo.addEventListener("click",()=>{
     window.location.assign("./index.html")
