@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
     <link rel="stylesheet" href="./dashboard.css">
-    <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://kit.fontawesome.com/d331f272dc.js"></script>
-     
+     <script src="https://kit.fontawesome.com/d331f272dc.js" crossorigin="anonymous"></script>
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </head>
+   
 <body>
   <div class="sidebar">
     <div class="logo-details">
@@ -77,9 +76,103 @@
     </ul>
   </div>
   <section class="home-section">
-      <div class="text">Dashboard</div>
+      <div class="text">Your Dashboard</div>
+      <div class="nav">
+        <div>
+          <h1>Quick Add to Diary</h1>
+        </div>
+        <div>
+          <a href="#">
+            <ion-icon name="fast-food-outline" class="icons1"></ion-icon>
+             <span class="links_name">FOOD</span>
+           </a>
+        </div>
+        <div>
+          <a href="#">
+            <ion-icon name="bicycle-outline" class="icons2"></ion-icon>
+             <span class="links_name">EXERCISE</span>
+           </a>
+        </div>
+        <div>
+          <a href="#">
+            <ion-icon name="finger-print-outline" class="icons3"></ion-icon>
+             <span class="links_name">BIOMETRIC</span>
+           </a>
+        </div>
+        <div>
+          <a href="#">
+            <ion-icon name="document-outline" class="icons4"></ion-icon>
+             <span class="links_name">NOTE</span>
+           </a>
+        </div>
+      </div>
+      <div class="mid-section">
+        <div class="poster">
+          <img class="poster-image1" src="https://braze-images.com/appboy/communication/marketing/content_cards_message_variations/images/6387dbe55fa90006644e5da0/60332a91ff2dcf89826899ec893b847b0bb32868/original.png?1669856169" alt="">
+          <h1>Discovering Nutrition Podcast: Ep. 8</h1>
+          <p>In light of Diabetes Awareness Month in November, we recently chatted to Robby Barbaro of Mastering Diabetes. Catch the conversation with our latest podcast episode.</p>
+          <button class="listen">LISTEN NOW</button>
+        </div>
+        <div class="ads">
+          <img class="poster-image2" src="https://cdn1.cronometer.com/brand/logos/cronometer-gold-black-text.svg" alt="">
+          <p>Get Gold for an ad-free experience.</p>
+          <button class="features" >SEE ALL FEATURES</button>
+        </div>
+        <div class="fasting">
+            <span class="name1">Fasting</span>
+            <ion-icon class="lock" name="lock-closed-outline"></ion-icon>
+            <p>Not Currently Fasting</p>
+            <h4>No Fasts Scheduled</h4>
+            <hr color="#f6f7fc" size="20px" width="90%" border-radius="5%" margin-top="10px">
+            <button class="fastbtn">NEW FAST</button>
+            <div class="fasting-stats">
+              <p>Fasting Stats</p>
+              <div>
+                <div>
+                  <p class="para">Completed Fasts:0</p>
+                  <p class="para">Total Time Fasting:0 hours</p>
+                </div>
+                <div>
+                  <p class="para">Longest Fast:0</p>
+                  <p class="para">7-Fast Average:0 hours</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="Energy">
+            <a class="toggle-btn" href="#">
+              <h3>Energy History (kcal)</h3>
+            <span class="arrow"></span>
+            </a>
+            
+           
+
+      </div>
+      <div class="fasting">
+        <span class="name1">Fasting</span>
+        <ion-icon class="lock" name="lock-closed-outline"></ion-icon>
+        <p>Not Currently Fasting</p>
+        <h4>No Fasts Scheduled</h4>
+        <hr color="#f6f7fc" size="20px" width="90%" border-radius="5%" margin-top="10px">
+        <button class="fastbtn">NEW FAST</button>
+        <div class="fasting-stats">
+          <p>Fasting Stats</p>
+          <div>
+            <div>
+              <p class="para">Completed Fasts:0</p>
+              <p class="para">Total Time Fasting:0 hours</p>
+            </div>
+            <div>
+              <p class="para">Longest Fast:0</p>
+              <p class="para">7-Fast Average:0 hours</p>
+            </div>
+          </div>
+        </div>
+    </div>
+      </div>
   </section>
- 
+  
 </body>
+
 </html>
 <script src="./dashboard.js"></script>
