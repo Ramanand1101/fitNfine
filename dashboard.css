@@ -42,6 +42,7 @@
 .sidebar.open .logo-details .logo_name{
   opacity: 1;
 }
+
 .sidebar .logo-details #btn{
   position: absolute;
   top: 50%;
@@ -233,6 +234,9 @@
   transition: all 0.5s ease;
   z-index: 2;
 }
+.b2{
+  color: #e6e600;
+}
 .sidebar.open ~ .home-section{
   left: 250px;
   width: calc(100% - 250px);
@@ -248,6 +252,26 @@
   width:90%;
   margin: auto;
   
+}
+.Log-Out{
+  font-size: 20px;
+  padding:8px 30px; 
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-top: 40px;
+  margin-left:80%;
+  background-color: #005c5c;
+  color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+}
+.Log-Out {
+  transition-duration: 0.4s;
+}
+
+.Log-Out:hover {
+  background-color: #ff5c33; /* Green */
+  color: white;
 }
 .nav{
   display: flex;
@@ -297,6 +321,7 @@
  width: 90%;
  margin: auto;
  gap:20px;
+ padding: 30px;
  margin-top: 20px;
 display:grid;
 grid-template-columns: repeat(3,1fr);
@@ -326,12 +351,20 @@ grid-template-columns: repeat(3,1fr);
   width: 80%;
   
 }
+.ads h2{
+  text-align: center;
+  font-size: 30px;
+  
+}
+.ads p{
+  text-align: center;
+}
 .mid-section .ads{
 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 align-items: center;
 padding-top:60%;
 border-radius: 10px;
-padding-left: 50px;
+padding-left: 30px;
 height:80%;
 }
 .mid-section .features{
@@ -341,7 +374,7 @@ height:80%;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-color: #005c5c;
   margin-top: 20px;
-  margin-left:15%;
+  margin-left:20%;
   border-radius: 10px;
 }
 .mid-section .fasting{
@@ -403,72 +436,45 @@ h3{
 } 
 .Energy{
   font-size:20px;
+  height:90%;
   padding:8px 20px;
   color: #FFF;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   border-radius: 10px;
 }
-
-
-body {
-  font-family: sans-serif;
+.Energy h3{
+  text-align: center;
+  padding-top:30px;
 }
 
-.toggle-btn {
-  position: relative;
-  display: block;
-  background: #3890b3;
-  color: white;
-  width: 300px;
-  margin:10px;
-  
-  text-decoration: none;
-  margin-bottom: 5px;
+.Energy label{
+  margin-top:30px;
+  color: #11101D;
+  display:inline-block;
+  width: 100px;
+}
+.Energy h2{
+  color: #11101D;
+  margin-top:30px;
+}
+.Energy input{
+  font-size: 15px;
+  padding:5px;
 }
 
-.arrow {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+.Energy button{
+  font-size: 20px;
+  padding:8px 30px; 
+  color: #FFF;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #005c5c;
+  margin-top: 40px;
+  border:4px solid grey;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-left: 25%;
+  border-radius: 10px;
 }
-
-.arrow::before,
-.arrow::after {
-  position: relative;
-  content: '';
-  display: block;
-  width: 10px;
-  height: 1px;
-  background: black;
-  transition: 0.3s ease-in-out;
-}
-
-.arrow::before {
-  transform: rotate(45deg);
-}
-
-.arrow::after {
-  left: 6px;
-  top: -1px;
-  transform: rotate(-45deg);
-}
-
-
-.toggle-btn {
-  background:white;
-}
-
-.toggle-btn.active .arrow::before {
-  transform: rotate(-45deg);
-}
-
-.toggle-btn.active .arrow::after {
-  transform: rotate(45deg);
-}
-
-
-
 @media (max-width: 420px) {
   .sidebar li .tooltip{
     display: none;

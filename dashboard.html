@@ -76,6 +76,9 @@
     </ul>
   </div>
   <section class="home-section">
+   <div id="top-section">
+    <button class="Log-Out">Log Out</button>
+   </div>
       <div class="text">Your Dashboard</div>
       <div class="nav">
         <div>
@@ -114,7 +117,7 @@
           <button class="listen">LISTEN NOW</button>
         </div>
         <div class="ads">
-          <img class="poster-image2" src="https://cdn1.cronometer.com/brand/logos/cronometer-gold-black-text.svg" alt="">
+            <h2>fitNfine<span class="b2">Gold</span></h2>
           <p>Get Gold for an ad-free experience.</p>
           <button class="features" >SEE ALL FEATURES</button>
         </div>
@@ -140,12 +143,21 @@
             </div>
         </div>
         <div class="Energy">
-            <a class="toggle-btn" href="#">
-              <h3>Energy History (kcal)</h3>
-            <span class="arrow"></span>
-            </a>
+              <h3>BMI Calculator</h3>
+              <label>Height</label>
+              <input type="text" id="height" placeholder="height in meter">
+              <br>
+              <label>Weight</label>
+              <input type="text" id="weight" placeholder="weight in kg">
+              <br>
+              <h2>
+                Your BMI is:- <span id="bmi"></span>, that means you are
+                <br>
+                <span id="status"></span>
+              </h2>
+              <button id="calculate">Calculate</button>
             
-           
+  
 
       </div>
       <div class="fasting">
