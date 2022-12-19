@@ -5,40 +5,41 @@
     <link rel="stylesheet" href="./dashboard.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
      <script src="https://kit.fontawesome.com/d331f272dc.js" crossorigin="anonymous"></script>
      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </head>
    
 <body>
-  <div class="sidebar">
-    <div class="logo-details">
-        <i class="fa-brands fa-nutritionix"></i>
-        <div class="logo_name">fitNfine</div>
-        <i class='bx bx-menu' id="btn" ></i>
-    </div>
-    <ul class="nav-list">
-      <li>
-          <i class='bx bx-search' ></i>
-         <input type="text" placeholder="Search...">
-         <span class="tooltip">Search</span>
-      </li>
-      <li>
-        <a href="#">
-          <i class='bx bx-grid-alt'></i>
-          <span class="links_name">Dashboard</span>
-        </a>
-         <span class="tooltip">Dashboard</span>
-      </li>
-      <li>
-       <a href="#">
+<div class="sidebar">
+  <div class="logo-details">
+    <i class="fa-brands fa-nutritionix"></i>
+    <div class="logo_name">fitNfine</div>
+    <i class='bx bx-menu' id="btn" ></i>
+  </div>
+  <ul class="nav-list">
+    <li>
+      <i class='bx bx-search' ></i>
+      <input type="text" placeholder="Search...">
+      <span class="tooltip">Search</span>
+    </li>
+    <li>
+      <a href="#">
+        <i class='bx bx-grid-alt'></i>
+        <span class="links_name">Dashboard</span>
+      </a>
+      <span class="tooltip">Dashboard</span>
+    </li>
+    <li>
+      <a href="#">
         <i class='bx bx-book'></i>
-         <span class="links_name">Diary</span>
-       </a>
-       <span class="tooltip">Diary</span>
-     </li>
-     <li>
-       <a href="#">
+        <span class="links_name">Diary</span>
+      </a>
+      <span class="tooltip">Diary</span>
+    </li>
+    <li>
+      <a href="#">
         <i class='bx bx-trending-up'></i>
          <span class="links_name">Trends</span>
        </a>
@@ -77,7 +78,8 @@
   </div>
   <section class="home-section">
    <div id="top-section">
-    <button class="Log-Out">Log Out</button>
+      <button class="Log-Out">Log Out</button>
+   
    </div>
       <div class="text">Your Dashboard</div>
       <div class="nav">
@@ -117,71 +119,80 @@
           <button class="listen">LISTEN NOW</button>
         </div>
         <div class="ads">
-            <h2>fitNfine<span class="b2">Gold</span></h2>
+          <h2>fitNfine<span class="b2">Gold</span></h2>
           <p>Get Gold for an ad-free experience.</p>
           <button class="features" >SEE ALL FEATURES</button>
         </div>
         <div class="fasting">
-            <span class="name1">Fasting</span>
-            <ion-icon class="lock" name="lock-closed-outline"></ion-icon>
-            <p>Not Currently Fasting</p>
-            <h4>No Fasts Scheduled</h4>
-            <hr color="#f6f7fc" size="20px" width="90%" border-radius="5%" margin-top="10px">
-            <button class="fastbtn">NEW FAST</button>
-            <div class="fasting-stats">
-              <p>Fasting Stats</p>
+          <span class="name1">Fasting</span>
+          <ion-icon class="lock" name="lock-closed-outline"></ion-icon>
+          <p>Not Currently Fasting</p>
+          <h4>No Fasts Scheduled</h4>
+          <hr color="#f6f7fc" size="20px" width="90%" border-radius="5%" margin-top="10px">
+          <button class="fastbtn">NEW FAST</button>
+          <div class="fasting-stats">
+            <p>Fasting Stats</p>
+            <div>
               <div>
-                <div>
-                  <p class="para">Completed Fasts:0</p>
-                  <p class="para">Total Time Fasting:0 hours</p>
-                </div>
-                <div>
-                  <p class="para">Longest Fast:0</p>
-                  <p class="para">7-Fast Average:0 hours</p>
-                </div>
+                <p class="para">Completed Fasts:0</p>
+                <p class="para">Total Time Fasting:0 hours</p>
               </div>
-            </div>
-        </div>
-        <div class="Energy">
-              <h3>BMI Calculator</h3>
-              <label>Height</label>
-              <input type="text" id="height" placeholder="height in meter">
-              <br>
-              <label>Weight</label>
-              <input type="text" id="weight" placeholder="weight in kg">
-              <br>
-              <h2>
-                Your BMI is:- <span id="bmi"></span>, that means you are
-                <br>
-                <span id="status"></span>
-              </h2>
-              <button id="calculate">Calculate</button>
-            
-  
-
-      </div>
-      <div class="fasting">
-        <span class="name1">Fasting</span>
-        <ion-icon class="lock" name="lock-closed-outline"></ion-icon>
-        <p>Not Currently Fasting</p>
-        <h4>No Fasts Scheduled</h4>
-        <hr color="#f6f7fc" size="20px" width="90%" border-radius="5%" margin-top="10px">
-        <button class="fastbtn">NEW FAST</button>
-        <div class="fasting-stats">
-          <p>Fasting Stats</p>
-          <div>
-            <div>
-              <p class="para">Completed Fasts:0</p>
-              <p class="para">Total Time Fasting:0 hours</p>
-            </div>
-            <div>
-              <p class="para">Longest Fast:0</p>
-              <p class="para">7-Fast Average:0 hours</p>
+              <div>
+                <p class="para">Longest Fast:0</p>
+                <p class="para">7-Fast Average:0 hours</p>
+              </div>
             </div>
           </div>
         </div>
-    </div>
+        <div class="Energy">
+          <div id="box">
+            <h3>BMI Calculator <br>(Body Mass Index)</h3>
+          <label>Height</label>
+          <input type="text" id="height" placeholder="height in meter">
+          <br>
+          <label>Weight</label>
+          <input type="text" id="weight" placeholder="weight in kg">
+          <br>
+          <h2>
+            Your BMI is:- <span id="bmi"></span>, that means you are
+            <br>
+            <span id="status"></span>
+          </h2>
+          <button id="calculate">Calculate</button>
+          </div>
+          
+        </div>
+        <div class="container">
+          <h1>Calories Calculator</h1>
+          <div class="calories"> 
+           <div>
+            <label>Weight in kg</label>
+            <input type="number" id="we" placeholder="Enter Weight">
+            <br>
+            <label>Height in cm</label>
+            <input type="number" id="hi" placeholder="Enter Height">
+            <br>
+            <label>Age</label>
+            <input type="text" id="age" placeholder="Enter Age">
+            <br>
+            <p id="resultcal"></p>
+            <button class="btn-primary" onclick="Calo()">Calculate</button>
+            <button class="btn-danger">Clear</button>
+            <p class="enter">Please Enter Height, Weight & Age</p>
+          </div>
+          </div>
+          </div>
+          <div class="pie-chart">
+            <h1 class="heading">Pie Chart</h1>
+            <canvas id="myChart"></canvas> 
+          </div>
+        </div>
+        </div>
+          </div>
+        </div>
       </div>
+      </div>
+        
   </section>
   
 </body>

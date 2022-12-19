@@ -35,9 +35,7 @@ h1,p{
     margin: 10px 0;
     border-radius: 8px;
 }
-label{
-    font-size: 20px;
-}
+
 #password{
     width: 90%;
     font-size:20px;
