@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar img{
+    width:200px;
+    height:70px;
+    margin-top:10px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+.navbar{
+    min-height: 70px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    font-size:20px;
+    padding: 0 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.nav-menu{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:30px;
+}
+.login{
+    font-size: 20px;
+    background-color:white;
+    border-radius: 7px;
+    padding: 12px 25px;
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+.nav-link:hover{
+    color:grey;
+
+}
+        h1{
+            text-align: center;
+        }
+        .para{
+            width:70%;
+            margin: auto;
+        }
+        .para img{
+            width: 100%;
+        }
+        footer{
+    width:100%;
+    bottom: 0;
+    margin-top: 30px;
+    padding:20px;
+    background-color:black;
+    color:white;
+    font-size:15px;
+    line-height: 20px;
+}
+        footer img{
+    width: 100px;
+}
+.row{
+    width: 85%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col h3{
+    width:fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form .far{
+    font-size: 18px;
+    margin-right:10px;
+
+}
+form input{
+    width:100%;
+    background: transparent;
+    color:#ccc;
+    border:0;
+    outline:none;
+
+}
+form button{
+    background:transparent;
+    border: 0;
+    outline:none;
+    cursor: pointer;
+}
+form button fa-solid{
+    font-size: 16px;
+    color:#ccc;
+}
+.social-icons .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color:#000;
+    background:#fff;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+hr{
+    width:100%;
+    border:0;
+    border-bottom:1px solid #ccc;
+    margin:20px auto;
+}
+.copyright{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div id="signUp-page">
+        <header>
+            <nav class="navbar">
+               <img id="logo" src="C:\Users\HP\Desktop\-quirky-sand-787\logo project.png" alt="">
+                    <ul class="nav-menu">
+                      <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Forums</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                      <li class="nav-item"><a href="#" class="nav-link">Support</a></li>    
+                      <button class="login">LOG IN</button>
+                    </ul>
+                </div>
+    <h1>About the Company </h1>
+        <div class="para">
+            <p>
+                fitNfine is the most accurate, comprehensive nutrition tracking app on earth. Unlike other apps on the market, our nutritional data is curated from verified, accurate sources. We aim to provide a complete solution – no matter what diet you choose to be on.
+
+Our CEO, Aaron Davidson, built Cronometer as a side project in 2005. He was following the CRON diet (Calorie Restriction with Optimal Nutrition) and being the nutrition nerd/software developer that he is, decided to build an app to track his diet. Thus, Cronometer was born. It was several years later before he came to the conclusion that maybe he was onto something and quit his six-figure corporate job to focus on improving Cronometer.
+
+There are now over 6 million users who are happy he did.
+
+Cronometer's success has hinged entirely on positive word-of-mouth from its users. The company is still – and plans to continue being – a bootstrap startup to this day.
+            </p>
+            <img src="https://cdn1.cronometer.com/webflow/crono-team-1-p-1600.jpeg" alt="">
+            <h1>Who We Are</h1>
+           <p>While our staff spans the globe our headquarters is based in the small-town of Revelstoke, British Columbia, Canada. Revelstoke is a health-centric mountain town brimming with endless options for staying active and a growing tech community – the perfect combination to call home.
+
+We are an eclectic mix of web developers, designers, nutrition scientists, business majors and personal trainers brought together by a love of nutrition. While our company has grown our mission and values have remained the same; we believe full spectrum nutrition is the best way to understand your diet’s effect on your health. We also believe in empowering everyone by ensuring they have access to accurate and comprehensive data to make informed decisions.
+
+Our goal is to build the best software for people and professionals to manage their nutrition. And we have the passion to make that happen; amazing data paired with awesome customer support truly are the Cronometer difference.
+
+If you have interest in your personal nutrition or working with your client’s nutrition check us out!</p> 
+        </div>
+
+     <footer>
+             <div class="row">
+                <div class="col">
+                    <img src="C:\Users\HP\Desktop\-quirky-sand-787\logo project.png" alt="">
+                </div>
+                <div class="col">
+                    <h3>The Product</h3>
+                    <p>For Individuals</p>
+                    <p>For Professionals</p>
+                    <p>Privacy</p>
+                    <p>Terms</p>
+                   
+                </div>
+                <div class="col">
+                    <h3>The Company</h3>
+                    <p>About Us</p>
+                    <p>fitNfine Blog</p>
+                    <p>fitNfine Forums</p>
+                    <p>Jobs</p>
+                    <p>Support</p>
+                </div>
+                <div class="col">
+                    <h3>Partners & Affiliates</h3>
+                    <p>Affiliate Program</p>
+                    <p>Media Kit</p>
+                </div>
+             <hr>
+             <div class="col">
+                <h3>Newsletter</h3>
+                <form action="">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div> 
+             <p class="copyright">Copyright © 2011-2022
+                All rights reserved </p>
+            </footer>
+    </div>     
+</body>
+<script>
+    let signPage=document.querySelector(".login")
+    signPage.addEventListener("click",()=>{
+     window.location.assign("./signIn.html")
+ })
+ let logo=document.querySelector("#logo")
+logo.addEventListener("click",()=>{
+    window.location.assign("./index.html")
+})
+ </script>
+</html>
+
